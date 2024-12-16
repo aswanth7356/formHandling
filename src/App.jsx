@@ -9,7 +9,6 @@ function App() {
     reset,
   } = useForm();
 
-  // Submit handler
   const onSubmit = (data) => {
     console.log(data);  
     reset();  
@@ -53,9 +52,8 @@ function App() {
             {errors.age && <p style={{ color: 'red' }}>{errors.age.message}</p>}
           </div>
 
-          {/* Submit Button */}
           <div>
-            <button type="submit" style={{ padding: '10px', backgroundColor: '#007bff', color: 'white', border: 'none' }}>
+            <button type="submit" style={{ padding: '10px', backgroundColor: '#007bff', color: 'white', border: 'none' , cursor:'pointer' }}>
               Submit
             </button>
           </div>
